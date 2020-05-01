@@ -1,16 +1,24 @@
-
 header .logo {
   width: 10%;
   height: auto;
 }
 
 header h1 {
-    text-align: center;
+  text-align: center;
 }
 
 header .painel {
   width: 100%;
   height: 500px;
+}
+
+#modal1 img,
+#modal2 img {
+  width: 90%;
+  height: auto;
+}
+.card-image img {
+  cursor: pointer;
 }
 
 #rodape {
@@ -31,10 +39,9 @@ header .painel {
   padding-left: 160px;
   transition: none;
 }
-#contato p a:hover{
-    text-decoration: underline;
-    transition: ease 1s;
-;
+#contato p a:hover {
+  text-decoration: underline;
+  transition: ease 1s;
 }
 
 #rodape1 a {
