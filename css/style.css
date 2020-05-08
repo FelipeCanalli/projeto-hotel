@@ -97,3 +97,13 @@ h2 {
   position: relative;
   
 }
+
+/* Gastronomia */
+#gastronomia{
+margin: 5% 9% ;
+box-shadow: 5px 10px 100px #24242459;
+}
+
+.card .card-content .card-title{
+  font-weight: 500;
+}
