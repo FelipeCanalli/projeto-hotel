@@ -35,7 +35,19 @@
       <nav>
         <div class="nav-wrapper pink darken-4">
           <a href="index.html" class="brand-logo center">Hotel Flamingo</a>
-          <ul class="left hide-on-med-and-down">
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="active"><a href="hotel.html">Hotel</a></li>
+            <li><a href="suites.html">Suites</a></li>
+            <li><a href="gastronomia.html">Gastronomia</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="localizacao.html">Localização</a></li>
+          </ul>
+
+          <ul class="sidenav" id="mobile-demo">
             <li class="active"><a href="hotel.html">Hotel</a></li>
             <li><a href="suites.html">Suites</a></li>
             <li><a href="gastronomia.html">Gastronomia</a></li>
@@ -45,17 +57,63 @@
         </div>
       </nav>
       <!-- Fim da barra de navegação -->
-      <!-- Início do painel -->
-      <img
-        src="img/teste1.jpg"
-        alt="Entrada do Hotel Flamingo"
-        class="painel"
-      />
-      <!-- Fim do painel -->
     </header>
+
     <main>
       <div id="apresentacao">
         <h2>Seja bem vindo</h2>
+        <p>
+          <span
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            id ducimus iusto ipsa sit ea possimus labore quam cupiditate
+            exercitationem corrupti molestiae, saepe et facilis eos quisquam ex
+            cum repudiandae.</span
+          >
+          <span
+            >Veritatis reiciendis officiis porro atque fugiat quisquam earum
+            nisi delectus illo beatae commodi minima aspernatur magni error
+            aliquid a, aut quod vero officia, veniam facere incidunt distinctio
+            sunt ad? Adipisci?</span
+          >
+          <span
+            >Incidunt debitis impedit ipsam dolore. Amet voluptate reprehenderit
+            commodi! Cum minus necessitatibus id alias repellendus reiciendis
+            asperiores debitis! Debitis neque sunt itaque eveniet sequi minus
+            saepe ex distinctio recusandae illum.</span
+          >
+        </p>
+        <p>
+          <span
+            >Corporis cum vel veritatis, atque suscipit dolore. Voluptates
+            voluptas error optio quibusdam rerum quod dolorum! Assumenda
+            voluptatem iure esse ipsa. Facere laboriosam incidunt hic
+            perferendis debitis placeat aliquid odit voluptatum!</span
+          >
+          <span
+            >Earum, placeat assumenda! Dolores blanditiis suscipit ullam odit
+            rerum, dolorem aut quod possimus id modi labore at praesentium
+            officiis accusamus, vitae fugit sed. Soluta sequi natus impedit
+            dicta? Cupiditate, necessitatibus!</span
+          >
+          <span
+            >Sed, deleniti expedita. Ratione, ab laudantium assumenda iure
+            exercitationem nisi blanditiis asperiores voluptate consectetur,
+            corporis veritatis commodi repellat tempore cumque quasi sint odit!
+            Quas repudiandae ipsum rerum atque delectus aspernatur.</span
+          >
+        </p>
+      </div>
+
+      <div id="separacao" style="
+        padding: 200px;
+        background-image: url(img/teste1.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position-y: -70px;
+      "></div>
+      <div id="apresentacao">
+        <h2>Porquê se Hospedar Conosco</h2>
         <p>
           <span
             >Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
@@ -104,12 +162,12 @@
           <div class="col s12 m6">
             <div class="card">
               <div class="card-image">
-                <img src="img/lazer1.jpg" />
-                <span class="card-title">Card Title</span>
+                <img src="img/teste3.jpg" />
+                <span class="card-title">Lazer</span>
                 <a
                   href="reservas.html"
                   class="btn-floating halfway-fab waves-effect waves-light red"
-                  ><i class="material-icons">add</i></a
+                  ><i class="material-icons">arrow_forward </i></a
                 >
               </div>
               <div class="card-content">
@@ -132,15 +190,17 @@
               <div class="card-image">
                 <iframe
                   width="100%"
-                  height="432"
+                  height="400"
                   src="https://www.youtube.com/embed/HsBkoZn_Nv4?controls=0"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
-                <span class="card-title">Card Title</span>
-                <a href="reservas.html" class="btn-floating halfway-fab waves-effect waves-light red"
-                  ><i class="material-icons">add</i></a
+                <span class="card-title">Lazer 2</span>
+                <a
+                  href="reservas.html"
+                  class="btn-floating halfway-fab waves-effect waves-light red"
+                  ><i class="material-icons">arrow_forward </i></a
                 >
               </div>
               <div class="card-content">
@@ -163,12 +223,18 @@
       <!--fim do cardHome-->
     </main>
 
+    <!-- #### Inicio do footer -->
     <footer>
-      <div id="contato">
-        <p><a href="mailto:flamingohotel@gmail.com">Fale Conosco</a></p>
-      </div>
-      <div id="rodape" class="row">
-        <div id="rodape1">
+      <div id="footer">
+        <div id="faleconosco">
+          <p>
+            <a href="mailto:flamingohotel@gmail.com"
+              >Fale Conosco - via email</a
+            >
+          </p>
+        </div>
+
+        <div id="rodape">
           <img src="img/logo4.png" alt="" />
           <ul>
             <li><a href="hotel.html">Hotel</a></li>
@@ -177,8 +243,17 @@
             <li><a href="reservas.html">Reservas</a></li>
             <li><a href="localizacao.html">Localização</a></li>
           </ul>
+          <div id="contato">
+            <p>
+              <a href="mailto:flamingohotel@gmail.com"
+                >flamingohotel@gmail.com</a
+              >
+              11 99543-8932 | Rua Boulevard Kukulcan, Nº77500
+            </p>
+          </div>
         </div>
       </div>
+      <!-- #### Fim do footer -->
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -187,7 +262,7 @@
 
     <script>
       $(document).ready(function () {
-        $(".collapsible").collapsible();
+        $(".sidenav").sidenav();
       });
     </script>
   </body>

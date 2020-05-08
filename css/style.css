@@ -1,17 +1,86 @@
-header .logo {
-  width: 10%;
-  height: auto;
+@import url("https://fonts.googleapis.com/css?family=Barlow:800&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
-header h1 {
+a,
+h1,
+h2 {
+  font-family: "DM Sans", sans-serif !important;
+}
+
+h1 {
+  text-align: center;
+  width: auto;
+  height: 70px;
+  border-color: black;
+}
+
+h1 img {
+  height: auto;
+  width: 10%;
+}
+
+/* footer */
+div #faleconosco {
+  background-color: #880e4f;
+  padding: 10px 10px 10px 50px;
+}
+
+#faleconosco p a {
+  color: #ffffff;
+  font-size: 18pt;
+  font-weight: 800;
+}
+
+#rodape {
+  background-color: #212121;
+  padding: 30px;
   text-align: center;
 }
-
-header .painel {
-  width: 100%;
-  height: 500px;
+#rodape img {
+  width: 20%;
+  height: auto;
+}
+#rodape a {
+  color: white;
+  padding: 0px 10px 0px 0px;
+}
+#rodape ul li:hover {
+  transform: scale(1.2);
 }
 
+#rodape ul {
+  padding-bottom: 10px;
+  display: inline-flex;
+}
+
+#contato,
+#contato p a {
+  color: #5e5e5e;
+}
+#contato p a:hover {
+  color: #ffffff;
+  transition: ease 2s;
+}
+/* fim do footer */
+
+/* Index */
+#apresentacao {
+  width: 99%;
+  background-color: #ffffff;
+  margin-left: 8px;
+  padding: 10px 10px 30px 10px;
+  border-radius: 10px;
+}
+h2 {
+  margin: 0px !important;
+  padding: 10px;
+}
+
+/* Suites */
 #modal1 img,
 #modal2 img {
   width: 90%;
@@ -21,52 +90,10 @@ header .painel {
   cursor: pointer;
 }
 
-#rodape {
-  background-color: #212121;
-  padding: 70px;
-}
-#contato {
-  margin-top: 10px;
-  background-color: #880e4f;
-  padding: 5px;
-}
-
-#contato p a {
-  font-family: "DM Sans", sans-serif;
-  color: #ffffff;
-  transition: none;
-  font-size: 15pt;
-  padding-left: 160px;
-  transition: none;
-}
-#contato p a:hover {
-  text-decoration: underline;
-  transition: ease 1s;
-}
-
-#rodape1 a {
-  color: #ffffff;
-  font-size: 15pt;
-  font-family: "DM Sans", sans-serif;
-  transition: none;
-}
-
-#rodape1 ul li a:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-#rodape1 {
-  display: inline-flex;
-  padding-left: 100px;
-}
-#rodape1 ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-  width: 10%;
+/* Reserva */
+#sex_masculino,
+#sex_feminino {
+  margin-left: 80px !important;
+  position: relative;
+  
 }

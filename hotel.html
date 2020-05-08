@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hotel Flamingo</title>
+    <title>Hotel Flamingo - Hotel</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Cantarell|DM+Sans|Fira+Sans+Extra+Condensed|Old+Standard+TT&display=swap"
@@ -35,7 +35,19 @@
       <nav>
         <div class="nav-wrapper pink darken-4">
           <a href="index.html" class="brand-logo center">Hotel Flamingo</a>
-          <ul class="left hide-on-med-and-down">
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="active"><a href="hotel.html">Hotel</a></li>
+            <li><a href="suites.html">Suites</a></li>
+            <li><a href="gastronomia.html">Gastronomia</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="localizacao.html">Localização</a></li>
+          </ul>
+
+          <ul class="sidenav" id="mobile-demo">
             <li class="active"><a href="hotel.html">Hotel</a></li>
             <li><a href="suites.html">Suites</a></li>
             <li><a href="gastronomia.html">Gastronomia</a></li>
@@ -45,21 +57,23 @@
         </div>
       </nav>
       <!-- Fim da barra de navegação -->
-      <!-- Início do painel -->
-      <img
-        src="img/teste1.jpg"
-        alt="Entrada do Hotel Flamingo"
-        class="painel"
-      />
-      <!-- Fim do painel -->
     </header>
+
+
     <main></main>
+
+    <!-- #### Inicio do footer -->
     <footer>
-      <div id="contato">
-        <p><a href="mailto:flamingohotel@gmail.com">Fale Conosco</a></p>
-      </div>
-      <div id="rodape" class="row">
-        <div id="rodape1">
+      <div id="footer">
+        <div id="faleconosco">
+          <p>
+            <a href="mailto:flamingohotel@gmail.com"
+              >Fale Conosco - via email</a
+            >
+          </p>
+        </div>
+
+        <div id="rodape">
           <img src="img/logo4.png" alt="" />
           <ul>
             <li><a href="hotel.html">Hotel</a></li>
@@ -68,8 +82,17 @@
             <li><a href="reservas.html">Reservas</a></li>
             <li><a href="localizacao.html">Localização</a></li>
           </ul>
+          <div id="contato">
+            <p>
+              <a href="mailto:flamingohotel@gmail.com"
+                >flamingohotel@gmail.com</a
+              >
+              11 99543-8932 | Rua Boulevard Kukulcan, Nº77500
+            </p>
+          </div>
         </div>
       </div>
+      <!-- #### Fim do footer -->
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -78,7 +101,7 @@
 
     <script>
       $(document).ready(function () {
-        $(".collapsible").collapsible();
+        $(".sidenav").sidenav();
       });
     </script>
   </body>
