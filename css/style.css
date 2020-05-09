@@ -81,14 +81,13 @@ h2 {
 }
 
 /* Suites */
-#modal1 img,
-#modal2 img {
-  width: 90%;
-  height: auto;
-}
 .card-image img {
   cursor: pointer;
 }
+#suites{
+  margin:8%;
+}
+
 
 /* Reserva */
 #sex_masculino,
